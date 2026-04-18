@@ -22,7 +22,6 @@ export default function ConversationPage() {
     const [loading, setLoading] = useState(false);
 
     const recognitionRef = useRef<any>(null);
-  const level = 14;
 
   const startListening = () => {
     console.log("🎤 Start Listening clicked");
@@ -106,8 +105,7 @@ export default function ConversationPage() {
     };
 
 
-    const genAI = new GoogleGenerativeAI("AIzaSyBH6490mW5wH11PjxQLJehnPuyMHRo9CUY");
-
+    const genAI = new GoogleGenerativeAI(import.meta.env.VITE_GEMINI_API_KEY);
     const getAIResponse = async (text: string): Promise<string> => {
         try {
             const model = genAI.getGenerativeModel({
@@ -143,7 +141,7 @@ User: ${text}
 
     return (
         <div style={{ padding: 20, background: "#9a9595", minHeight: "100vh" }}>
-            <Navbar level={level} />
+            <Navbar />
             <h2 style={{ color: "#333" }}>AI English Coach</h2>
 
             <select
