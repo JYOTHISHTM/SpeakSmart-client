@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
-import Footer from "../components/Footer";
+import AppFooter from "../components/AppFooter";
+
 
 export default function HomePage() {
   const [showRoleModal, setShowRoleModal] = useState(false);
@@ -24,7 +25,7 @@ export default function HomePage() {
       minHeight: "100vh",
       background: "linear-gradient(135deg, #F8FAFC 0%, #F0F9FF 100%)"
     }}>
-      <Navbar level={level} />
+      <Navbar  />
 
       <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "40px 24px" }}>
         
@@ -257,7 +258,7 @@ export default function HomePage() {
         </div>
       </div>
 
-      <Footer />
+      <AppFooter/>
 
       {/* Role Play Modal */}
       {showRoleModal && (
