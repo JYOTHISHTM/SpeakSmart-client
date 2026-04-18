@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Briefcase, Utensils, Stethoscope, Phone, Plane, Hotel, ShoppingCart, Map, Users, PartyPopper } from "lucide-react";
 import Navbar from "../components/Navbar";
+import AppFooter from "../components/AppFooter";
 
 
 const scenarios = [
@@ -82,6 +83,7 @@ export default function RolePlay() {
     </div>
 
   </div>
+  <AppFooter/>
 </div>
   );
 }
