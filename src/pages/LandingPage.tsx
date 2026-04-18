@@ -332,6 +332,7 @@ export default function LandingPage() {
           <span style={{ fontSize: 22, fontFamily: "'Playfair Display', serif", fontWeight: 900, color: "#111827" }}>Smart</span>
         </div>
         <div style={{ display: "flex", gap: 10, alignItems: "center" }}>
+          <Link to="/home" style={{ fontSize: 18, color: "#ff0000", textDecoration: "none", padding: "8px 16px", fontWeight: 900 }}>home</Link>
           <Link to="/login" style={{ fontSize: 14, color: "#374151", textDecoration: "none", padding: "8px 16px", fontWeight: 500 }}>Login</Link>
           <Link to="/signup" className="cta-btn" style={{ background: "#4F46E5", color: "#fff", textDecoration: "none", padding: "9px 20px", borderRadius: 10, fontSize: 14, fontWeight: 700, boxShadow: "0 2px 10px rgba(79,70,229,0.25)" }}>
             Start Free
