@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
+import AppFooter from "../components/AppFooter";
+
 
 export default function ProfilePage() {
   const [form, setForm] = useState({
@@ -80,6 +82,7 @@ export default function ProfilePage() {
 
         </div>
       </div>
+      <AppFooter/>
     </div>
   );
 }
