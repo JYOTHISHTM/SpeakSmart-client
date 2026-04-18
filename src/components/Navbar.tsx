@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function Navbar({ level = 14 }) {
+export default function Navbar() {
   return (
     <nav style={{
       maxWidth: "1280px",
@@ -17,6 +17,7 @@ export default function Navbar({ level = 14 }) {
       borderBottom: "1px solid rgba(229, 231, 235, 0.6)"
     }}>
       {/* Logo */}
+      <Link to="/" style={{ textDecoration: "none" }}>
       <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
         <span style={{ 
           fontFamily: "'Playfair Display', serif", 
@@ -31,48 +32,44 @@ export default function Navbar({ level = 14 }) {
           fontSize: 28 
         }}>Smart</span>
       </div>
+</Link>
+
 
       {/* Menu Links */}
       <div style={{ 
         display: "flex", 
         gap: 32, 
         fontSize: 15, 
-        fontWeight: 500,
+        fontWeight: 500,  
         color: "#374151"
-      }}>
-        <Link to="/" style={{ color: "#4F46E5", fontWeight: 600, textDecoration: "none" }}>Home</Link>
-        <Link to="/practice" style={{ textDecoration: "none" }}>Practice</Link>
-        <Link to="/lessons" style={{ textDecoration: "none" }}>Lessons</Link>
-        <Link to="/progress" style={{ textDecoration: "none" }}>Progress</Link>
+      }}> 
+        <Link to="/home" style={{ color: "#e54646", fontWeight: 600, textDecoration: "none" }}>Home</Link>
+        <Link to="/conversation" style={{  color: "#e54646",textDecoration: "none" }}>conversation</Link>
+        <Link to="/lessons" style={{ textDecoration: "none" }}>F.I.B</Link>
+        <Link to="/lessons" style={{ textDecoration: "none" }}>Fluency</Link>
+        <Link to="/role-play" style={{ color: "#e54646", textDecoration: "none" }}>Role Play</Link>
+        <Link to="/progress" style={{ textDecoration: "none" }}>Word Bank</Link>
+        <Link to="/profile" style={{ color: "#e54646", textDecoration: "none" }}>Profile</Link>
       </div>
 
       {/* Right Side */}
       <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-        <div style={{ 
-          background: "#EEF2FF", 
-          color: "#4F46E5", 
-          padding: "6px 16px", 
-          borderRadius: 30, 
-          fontSize: 14, 
-          fontWeight: 600 
-        }}>
-          Level {level}
-        </div>
+      
 
         <div style={{ 
-          width: 42, 
-          height: 42, 
-          borderRadius: "50%", 
+          width: 82, 
+          height: 36, 
+          borderRadius: "10%", 
           background: "linear-gradient(45deg, #4F46E5, #7C3AED)", 
           display: "flex", 
           alignItems: "center", 
           justifyContent: "center", 
           color: "white", 
-          fontWeight: 700,
-          fontSize: 15,
+          fontWeight: 400,
+          fontSize: 14,
           boxShadow: "0 4px 12px rgba(79, 70, 229, 0.3)"
         }}>
-          JN
+          JOTHISH
         </div>
       </div>
     </nav>
