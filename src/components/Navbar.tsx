@@ -11,13 +11,14 @@ export default function Navbar() {
 
 
   return (
+
+
     <nav style={{
-      maxWidth: "1280px",
-      margin: "0 auto",
+      width: "100%",
       display: "flex",
       alignItems: "center",
       justifyContent: "space-between",
-      padding: "20px 0",
+      padding: "20px 40px",
       position: "sticky",
       top: 0,
       zIndex: 100,
@@ -54,10 +55,10 @@ export default function Navbar() {
       }}>
         <Link to="/home" style={{ color: "#e54646", fontWeight: 600, textDecoration: "none" }}>Home</Link>
         <Link to="/conversation" style={{ color: "#e54646", textDecoration: "none" }}>conversation</Link>
-        <Link to="/lessons" style={{ textDecoration: "none" }}>F.I.B</Link>
-        <Link to="/lessons" style={{ textDecoration: "none" }}>Fluency</Link>
+        <Link to="/fib" style={{ color: "#e54646", textDecoration: "none" }}>F.I.B</Link>
+        <Link to="#" style={{ textDecoration: "none" }}>Fluency</Link>
         <Link to="/role-play" style={{ color: "#e54646", textDecoration: "none" }}>Role Play</Link>
-        <Link to="/progress" style={{ textDecoration: "none" }}>Word Bank</Link>
+        <Link to="#" style={{ textDecoration: "none" }}>Word Bank</Link>
         <Link to="/profile" style={{ color: "#e54646", textDecoration: "none" }}>Profile</Link>
       </div>
 
