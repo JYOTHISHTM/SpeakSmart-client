@@ -8,7 +8,7 @@ import { api } from "../services/auth.service";
 
 
 export default function LoginPage() {
-  const [email, setEmail] = useState("aisha.nair@gmail.com");
+  const [email, setEmail] = useState("mail.id@gmail.com");
   const [password, setPassword] = useState("••••••••••");
 
 
@@ -86,7 +86,7 @@ export default function LoginPage() {
         {/* Email */}
         <div style={{ marginBottom: 16 }}>
           <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "#374151", marginBottom: 6, letterSpacing: "0.04em" }}>EMAIL ADDRESS</label>
-          <input className="ss-input" type="email" placeholder="aisha@example.com" value={email} onChange={e => setEmail(e.target.value)} />
+          <input className="ss-input" type="email" placeholder="jo@example.com" value={email} onChange={e => setEmail(e.target.value)} />
         </div>
 
         {/* Password */}

@@ -85,7 +85,7 @@ const stats = [
 
 const testimonials = [
   {
-    name: "Aisha Nair",
+    name: "jo",
     location: "Kochi, India",
     initials: "AN",
     color: "#4F46E5",
