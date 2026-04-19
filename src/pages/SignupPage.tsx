@@ -62,7 +62,7 @@ export default function SignupPage() {
         </p>
 
         {/* Google Button */}
-        <button className="ss-google" style={{ width: "100%", padding: "12px", borderRadius: 12, border: "1.5px solid #E5E7EB", background: "#fff", fontSize: 14, fontWeight: 600, fontFamily: "'DM Sans', sans-serif", cursor: "pointer", color: "#111827", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, transition: "background 0.15s, border-color 0.15s" }}>
+        {/* <button className="ss-google" style={{ width: "100%", padding: "12px", borderRadius: 12, border: "1.5px solid #E5E7EB", background: "#fff", fontSize: 14, fontWeight: 600, fontFamily: "'DM Sans', sans-serif", cursor: "pointer", color: "#111827", display: "flex", alignItems: "center", justifyContent: "center", gap: 10, transition: "background 0.15s, border-color 0.15s" }}>
           <svg width="16" height="16" viewBox="0 0 18 18" fill="none">
             <path d="M17.64 9.2c0-.637-.057-1.251-.164-1.84H9v3.481h4.844c-.209 1.125-.843 2.078-1.796 2.717v2.258h2.908c1.702-1.567 2.684-3.875 2.684-6.615z" fill="#4285F4"/>
             <path d="M9 18c2.43 0 4.467-.806 5.956-2.18l-2.908-2.259c-.806.54-1.837.86-3.048.86-2.344 0-4.328-1.584-5.036-3.711H.957v2.332C2.438 15.983 5.482 18 9 18z" fill="#34A853"/>
@@ -70,31 +70,31 @@ export default function SignupPage() {
             <path d="M9 3.58c1.321 0 2.508.454 3.44 1.345l2.582-2.58C13.463.891 11.426 0 9 0 5.482 0 2.438 2.017.957 4.958L3.964 7.29C4.672 5.163 6.656 3.58 9 3.58z" fill="#EA4335"/>
           </svg>
           Sign up with Google
-        </button>
+        </button> */}
 
         {/* Divider */}
-        <div style={{ display: "flex", alignItems: "center", gap: 12, margin: "20px 0", fontSize: 12, color: "#9CA3AF" }}>
+        {/* <div style={{ display: "flex", alignItems: "center", gap: 12, margin: "20px 0", fontSize: 12, color: "#9CA3AF" }}>
           <div style={{ flex: 1, height: 1, background: "#E5E7EB" }} />
           or fill in the details
           <div style={{ flex: 1, height: 1, background: "#E5E7EB" }} />
-        </div>
+        </div> */}
 
         {/* Name Row */}
         <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginBottom: 16 }}>
           <div>
             <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "#374151", marginBottom: 6, letterSpacing: "0.04em" }}>FIRST NAME</label>
-            <input className="ss-input" type="text" placeholder="Aisha" value={firstName} onChange={e => setFirstName(e.target.value)} />
+            <input className="ss-input" type="text" placeholder="Jo" value={firstName} onChange={e => setFirstName(e.target.value)} />
           </div>
           <div>
             <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "#374151", marginBottom: 6, letterSpacing: "0.04em" }}>LAST NAME</label>
-            <input className="ss-input" type="text" placeholder="Nair" value={lastName} onChange={e => setLastName(e.target.value)} />
+            <input className="ss-input" type="text" placeholder="Jo" value={lastName} onChange={e => setLastName(e.target.value)} />
           </div>
         </div>
 
         {/* Email */}
         <div style={{ marginBottom: 16 }}>
           <label style={{ display: "block", fontSize: 12, fontWeight: 600, color: "#374151", marginBottom: 6, letterSpacing: "0.04em" }}>EMAIL ADDRESS</label>
-          <input className="ss-input" type="email" placeholder="aisha@example.com" value={email} onChange={e => setEmail(e.target.value)} />
+          <input className="ss-input" type="email" placeholder="jo@example.com" value={email} onChange={e => setEmail(e.target.value)} />
         </div>
 
         {/* Password */}
