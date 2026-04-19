@@ -6,6 +6,9 @@ import HomePage from "./pages/HomePage";
 import ConversationPage from "./pages/ConversationPage";
 import RolePlay from "./pages/RolePlay";
 import ProfilePage from "./pages/ProfilePage";
+import FIB from "./pages/FIB";
+
+
 
 function App() {
   return (
@@ -17,6 +20,7 @@ function App() {
           <Route path="/signup" element={<SignupPage />} />
           <Route path="/home" element={<HomePage />} />
           <Route path="/conversation" element={<ConversationPage />} />
+          <Route path="/fib" element={<FIB />} />
           <Route path="/role-play" element={<RolePlay />} />
           <Route path="/profile" element={<ProfilePage />} />
         </Routes>
