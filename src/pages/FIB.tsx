@@ -150,6 +150,8 @@ export default function FillInTheBlanks() {
         >
             <Navbar />
 
+
+
             {/* MAIN CONTENT (pushes footer down) */}
             <div
                 style={{
@@ -161,12 +163,24 @@ export default function FillInTheBlanks() {
                     color: "#111827",
                 }}
             >
+
+                <div className="flex flex-col items-center justify-center text-center mt-10 p-10">
+                    <h1 className="text-4xl font-bold text-violet-600 mb-3">
+                        Good Morning, Michael 
+                    </h1>
+
+                    <p className="text-gray-500 text-lg max-w-xl">
+                        Welcome to Fill in the Blanks — sharpen your English skills  
+                    </p>
+                </div>
+
+
                 {/* SETUP */}
                 {!exercise && (
                     <div
                         style={{
                             background: "#ffffff",
-                            padding: 20,
+                            padding: 25,
                             borderRadius: 14,
                             border: "2px solid #e5e7eb",
                             boxShadow: "0 6px 16px rgba(0,0,0,0.08)",
@@ -309,9 +323,9 @@ export default function FillInTheBlanks() {
                                     background: "#ffffff",
                                     border: "2px solid #e5e7eb",
                                     boxShadow: "0 4px 12px rgba(0,0,0,0.06)",
-                                    maxWidth: 500,        
-                                    marginLeft: "auto",   
-                                    marginRight: "auto", 
+                                    maxWidth: 500,
+                                    marginLeft: "auto",
+                                    marginRight: "auto",
                                 }}
                             >
                                 <p style={{ marginBottom: 10 }}>
