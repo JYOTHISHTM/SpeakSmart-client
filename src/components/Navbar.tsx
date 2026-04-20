@@ -53,12 +53,12 @@ export default function Navbar() {
         fontWeight: 500,
         color: "#374151"
       }}>
-        <Link to="/home" style={{ color: "#e54646", fontWeight: 600, textDecoration: "none" }}>Home</Link>
+        <Link to="/home" style={{ color: "#15b715",  textDecoration: "none" }}>Home</Link>
         <Link to="/conversation" style={{ color: "#e54646", textDecoration: "none" }}>conversation</Link>
-        <Link to="/fib" style={{ color: "#e54646", textDecoration: "none" }}>F.I.B</Link>
+        <Link to="/fib" style={{ color: "#15b715", textDecoration: "none" }}>F.I.B</Link>
         <Link to="#" style={{ textDecoration: "none" }}>Fluency</Link>
         <Link to="/role-play" style={{ color: "#e54646", textDecoration: "none" }}>Role Play</Link>
-        <Link to="#" style={{ textDecoration: "none" }}>Word Bank</Link>
+        <Link to="/word-bank" style={{color: "#15b715", textDecoration: "none" }}>Word Bank</Link>
         <Link to="/profile" style={{ color: "#e54646", textDecoration: "none" }}>Profile</Link>
       </div>
 
