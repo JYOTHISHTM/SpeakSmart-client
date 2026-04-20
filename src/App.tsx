@@ -8,7 +8,7 @@ import RolePlay from "./pages/RolePlay";
 import ProfilePage from "./pages/ProfilePage";
 import FIB from "./pages/FIB";
 
-
+import WordBank from "./pages/WordBank";
 
 function App() {
   return (
@@ -23,6 +23,8 @@ function App() {
           <Route path="/fib" element={<FIB />} />
           <Route path="/role-play" element={<RolePlay />} />
           <Route path="/profile" element={<ProfilePage />} />
+
+          <Route path="/word-bank" element={<WordBank />} />
         </Routes>
       </div>
     </BrowserRouter>
