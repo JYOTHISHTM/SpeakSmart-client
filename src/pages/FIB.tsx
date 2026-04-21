@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Navbar from "../components/Navbar";
 import AppFooter from "../components/AppFooter";
-
+import { generateFIBExercise } from "../services/fib.service";
 
 type Blank = {
     id: number;
@@ -42,11 +42,7 @@ export default function FillInTheBlanks() {
     const generateExercise = async () => {
         setLoading(true);
         try {
-            const res = await fetch("http://localhost:5000/api/fill-blanks/generate", {
-                method: "POST",
-                headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ difficulty, numBlanks }),
-            });
+            const res = await generateFIBExercise({ difficulty, numBlanks });
 
             const data = await res.json();
             if (!res.ok) throw new Error(data.error);
@@ -166,11 +162,11 @@ export default function FillInTheBlanks() {
 
                 <div className="flex flex-col items-center justify-center text-center mt-10 p-10">
                     <h1 className="text-4xl font-bold text-violet-600 mb-3">
-                        Good Morning, Michael 
+                        Good Morning, Michael
                     </h1>
 
                     <p className="text-gray-500 text-lg max-w-xl">
-                        Welcome to Fill in the Blanks — sharpen your English skills  
+                        Welcome to Fill in the Blanks — sharpen your English skills
                     </p>
                 </div>
 
