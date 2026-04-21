@@ -1,5 +1,8 @@
 import { useEffect, useState } from "react";
 import Navbar from "../components/Navbar";
+import { getAllWords } from "../services/wordBank.service";
+
+
 
 type Word = {
   _id: string;
@@ -13,10 +16,12 @@ export default function WordBank() {
   const [selected, setSelected] = useState<Word | null>(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/words")
-      .then(res => res.json())
-      .then(setWords);
-  }, []);
+  getAllWords()
+    .then(setWords)
+    .catch(err => {
+      console.error(err.message);
+    });
+}, []);
 
   const primary = "#4f46e5";
 
