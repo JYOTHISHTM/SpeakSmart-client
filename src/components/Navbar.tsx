@@ -56,7 +56,7 @@ export default function Navbar() {
         <Link to="/home" style={{ color: "#15b715",  textDecoration: "none" }}>Home</Link>
         <Link to="/conversation" style={{ color: "#e54646", textDecoration: "none" }}>conversation</Link>
         <Link to="/fib" style={{ color: "#15b715", textDecoration: "none" }}>F.I.B</Link>
-        <Link to="#" style={{ textDecoration: "none" }}>Fluency</Link>
+        <Link to="/fluency" style={{ textDecoration: "none" }}>Fluency</Link>
         <Link to="/role-play" style={{ color: "#e54646", textDecoration: "none" }}>Role Play</Link>
         <Link to="/word-bank" style={{color: "#15b715", textDecoration: "none" }}>Word Bank</Link>
         <Link to="/profile" style={{ color: "#e54646", textDecoration: "none" }}>Profile</Link>
