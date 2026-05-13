@@ -7,6 +7,7 @@ import ConversationPage from "./pages/ConversationPage";
 import RolePlay from "./pages/RolePlay";
 import ProfilePage from "./pages/ProfilePage";
 import FIB from "./pages/FIB";
+import FluencyPage from "./pages/FluencyPage";
 
 import WordBank from "./pages/WordBank";
 
@@ -21,6 +22,7 @@ function App() {
           <Route path="/home" element={<HomePage />} />
           <Route path="/conversation" element={<ConversationPage />} />
           <Route path="/fib" element={<FIB />} />
+          <Route path="/fluency" element={<FluencyPage />} />
           <Route path="/role-play" element={<RolePlay />} />
           <Route path="/profile" element={<ProfilePage />} />
 
